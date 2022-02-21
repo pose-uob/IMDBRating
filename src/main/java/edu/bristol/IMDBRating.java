@@ -8,7 +8,7 @@ public class IMDBRating
     public double addNewRating(int newRating)
     {
         double previousTotal = (currentAverage * ratingCount);
-        double newTotal = previousTotal + newRating;
+        float newTotal = previousTotal + newRating;
         ratingCount++;
         currentAverage = newTotal / ratingCount;
         System.out.println(currentAverage);
