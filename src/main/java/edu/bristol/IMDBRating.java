@@ -10,7 +10,7 @@ public class IMDBRating
         int previousTotal = (int) (currentAverage * ratingCount);
         int newTotal = previousTotal + newRating;
         ratingCount++;
-        currentAverage = (float) newTotal / ratingCount;
+        currentAverage = newTotal / ratingCount;
         return currentAverage;
     }
 }
