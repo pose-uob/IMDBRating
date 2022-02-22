@@ -7,6 +7,9 @@ public class IMDBRating
 
     public float addNewRating(int newRating)
     {
+
+	System.out.println("Hi there");
+
         int previousTotal = (int) (currentAverage * ratingCount);
         int newTotal = previousTotal + newRating;
         ratingCount++;
