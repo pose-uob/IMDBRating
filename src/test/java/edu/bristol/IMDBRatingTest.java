@@ -41,6 +41,8 @@ public class IMDBRatingTest
         averageRating = rater.addNewRating(-12);
         assertEquals( 4, averageRating);
 
+        averageRating = rater.addNewRating(4);
+        assertEquals( 4.3, averageRating);
     }
 
 }
