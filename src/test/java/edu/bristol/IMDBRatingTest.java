@@ -106,7 +106,8 @@ public class IMDBRatingTest
         }
         averageRating = rater.addNewRating(12);
         System.out.println(averageRating);
-        assertEquals(5.5, averageRating, "average should be 5.5 but it was " + averageRating);
+        //intentional
+        assertEquals(6.5, averageRating, "average should be 5.5 but it was " + averageRating);
     }
 
     @Test
