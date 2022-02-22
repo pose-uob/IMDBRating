@@ -7,10 +7,11 @@ public class IMDBRating
 
     public float addNewRating(int newRating)
     {
-        int previousTotal = (int) (currentAverage * ratingCount);
-        int newTotal = previousTotal + newRating;
+        float previousTotal = currentAverage * ratingCount;
+        float newTotal = previousTotal + newRating;
         ratingCount++;
         currentAverage = newTotal / ratingCount;
+        currentAverage = Math.round(currentAverage*10.0)/10.0f;
         return currentAverage;
     }
 }
