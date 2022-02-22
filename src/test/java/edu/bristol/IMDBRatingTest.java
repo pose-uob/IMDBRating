@@ -21,6 +21,6 @@ public class IMDBRatingTest
         assertTrue(averageRating == (float) 4.3, "Adding 3rd rating: average should be 4.3");
 
         averageRating = rater.addNewRating(9);
-        assertTrue(averageRating == (float) 5.5, "Adding 4th rating: average should be 5.5");
+        assertTrue(averageRating == (float) 5.4, "Adding 4th rating: average should be 5.5");
     }
 }
