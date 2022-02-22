@@ -7,6 +7,8 @@ public class IMDBRating
 
     public float addNewRating(int newRating)
     {
+        if (newRating < 0) newRating = 0;
+        if (newRating > 10) newRating = 10;
         int previousTotal = (int) (currentAverage * ratingCount);
         int newTotal = previousTotal + newRating;
         ratingCount++;
