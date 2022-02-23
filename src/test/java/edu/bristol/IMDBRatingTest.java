@@ -16,5 +16,20 @@ public class IMDBRatingTest
 
         averageRating = rater.addNewRating(4);
         assertTrue(averageRating == 3.0, "Adding 2nd rating: average should be 3.0");
+
+        averageRating = rater.addNewRating(6);
+        assertTrue(averageRating == 4.0, "Adding 3rd rating: average should be 4.0");
+
+        averageRating = rater.addNewRating(9);
+        assertTrue(averageRating == 5.25, "Adding 4th rating: average should be 5.25");
+
+        averageRating = rater.addNewRating(4);
+        assertTrue(averageRating == 5, "Adding 5th rating: average should be 5");
+
+        averageRating = rater.addNewRating(8);
+        assertTrue(averageRating == 5.5, "Adding 6th rating: average should be 5.5");
+
+        averageRating = rater.addNewRating(10);
+        assertTrue(averageRating == 6.14, "Adding 7th rating: average should be 6.14 ");
     }
 }
