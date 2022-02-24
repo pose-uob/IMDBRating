@@ -27,6 +27,6 @@ public class IMDBRatingTest
         assertTrue(averageRating == 4.0, "Adding 8: average should be 4.0");
 
         averageRating = rater.addNewRating(19);
-        assertTrue(averageRating == 4.1,"Ignoring too large number 20");
+        assertTrue(averageRating == 4.0,"Ignoring too large number 20");
     }
 }
