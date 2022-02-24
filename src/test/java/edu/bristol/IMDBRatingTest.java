@@ -31,4 +31,20 @@ public class IMDBRatingTest
         assertTrue(averageRating == 1.5, "Adding 2nd rating: average should be 1.5");
 
     }
+    @Test
+    public void testAverageRating3()
+    {
+        float averageRating;
+        IMDBRating rater = new IMDBRating();
+
+        averageRating = rater.addNewRating(2);
+        assertTrue(averageRating == 2.0);
+
+        averageRating = rater.addNewRating(11);
+        assertTrue(averageRating == 2.0);
+
+        averageRating = rater.addNewRating(-1);
+        assertTrue(averageRating == 2.0);
+
+    }
 }
